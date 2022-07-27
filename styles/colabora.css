@@ -1,0 +1,152 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  text-decoration: none;
+  font-family: ;
+  margin: 0px;
+}
+
+
+.barra {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  height: 25%;
+  width: 100%;
+  align-items: center;
+  z-index: 1;
+  border-bottom: 2px inset rgba(22, 20, 21, 0.05);
+}
+
+.icono {
+
+}
+
+.opciones-navegacion {
+display: flex;
+gap: 10px;
+font-size: 18px;
+list-style-type: none;
+}
+
+.opciones-navegacion a {
+color: black;
+padding: 5px;
+margin-left: 10px;
+
+}
+
+.opciones-navegacion a:hover {
+color: purple;
+background-color: rgb(230, 124, 230);
+border-radius: 50%;
+padding: 5px;
+border-radius: 20px;
+}
+
+#barra-colabora {
+color: azure;
+background-color: purple;
+padding: 15px;
+border-radius: 20px;
+}
+
+#barra-colabora:hover {
+color: rgb(70, 17, 70);
+background-color: rgb(255, 220, 196);
+}
+
+#barra-contactenos {
+color: rgb(51, 43, 33);
+border: 2px solid purple;
+padding: 15px;
+border-radius: 20px;
+}
+
+#barra-contactenos:hover {
+color: rgb(255, 255, 255);
+border: 2px solid purple;
+background-color: rgb(230, 124, 230);
+padding: 15px;
+border-radius: 20px;
+}
+
+
+
+
+
+.container-vinculos {
+  gap: 10px;
+}
+
+.legal, .legal li a {
+  color: rgb(204, 33, 20);
+}
+
+
+.pie-de-pagina, .pie-de-pagina a{
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+.pie-de-pagina:hover, .pie-de-pagina a:hover {
+  color: #ff999e;
+}
+
+.pie-de-pagina{
+  border-top: 5px inset rgba(22, 20, 21, 0.05) ;
+}
+
+.pie-de-pagina p {
+  color: #ff999e;
+}
+
+.redes {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+  gap: 2rem;
+  padding: 1% 0;
+}
+
+.vinculos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style:square;
+  margin-top: 2%;
+  gap: 5px;
+  text-align:justify;
+  margin-left: 10%;
+}
+
+
+ .legal, .redes-sociales{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1em;
+}
+
+.images-redes:hover{
+  zoom: 120%;
+}
+
+.direccion-footer{
+  position: relative;
+  bottom: -70px;
+  right: -20px;
+}

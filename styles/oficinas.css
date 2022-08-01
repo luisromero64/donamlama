@@ -22,15 +22,28 @@ html {
 .barra {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  height: 25%;
   width: 100%;
   align-items: center;
   z-index: 1;
   border-bottom: 2px inset rgba(22, 20, 21, 0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color:#ffffff;
 }
 
 .icono {
 
+}
+
+.toggle{
+color: #47046e;
+background-color: transparent;
+border: none;
+font-size: 30px;
+display: none;
+width: 40px;
+cursor: pointer;
 }
 
 .opciones-navegacion {
@@ -51,7 +64,7 @@ margin-left: 10px;
 color: purple;
 background-color: rgb(230, 124, 230);
 border-radius: 50%;
-padding: 5px;
+padding: 0px;
 border-radius: 20px;
 }
 
@@ -85,6 +98,7 @@ border-radius: 20px;
 .container{
   display: flex;
   width: 100%;
+  margin-top: 67px;
 }
 
 .container-torrent{
@@ -189,6 +203,12 @@ tr{
   text-align: center; 
   gap: 2rem;
   padding: 1% 0;
+  margin: auto;
+}
+
+.container-vinculos, .container-redes, .container-legal{
+  margin: auto;
+  text-align: center;
 }
 
 .vinculos{
@@ -201,13 +221,17 @@ tr{
   margin-left: 10%;
 }
 
+.titulo-redes {
+  text-align: center;
+  margin: 4% 0px 0px 10%;
+}
 
  .legal, .redes-sociales{
   display: flex;
   gap: 50px;
   justify-content: center;
   list-style: none;
-  margin-top: 1em;
+  margin: 2% auto;
 }
 
 .images-redes:hover{
@@ -218,4 +242,33 @@ tr{
   position: relative;
   bottom: -70px;
   right: -20px;
+}
+
+@media screen and (max-width:1300px){
+  .barra{
+    grid-template-columns: 1fr 7fr;
+  }
+}
+
+@media screen and (max-width:1279px){
+  .opciones-navegacion {
+    gap: 5px;
+    font-size: 16px;
+  }
+
+  .opciones-navegacion a {
+    padding: 5px;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width:1160px){
+  .opciones-navegacion {
+    gap: 0px;
+    font-size: 16px;
+  }
+
+  .opciones-navegacion a {
+    padding: 0px;
+    margin-left: 10px;
+  }
 }

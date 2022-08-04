@@ -560,7 +560,7 @@ html {
    overflow-y: auto;
    gap: 25px;
    padding-top: 3%;
-   left: 100%;
+   left: 0%;
    transition: left 0.5s;
    text-align: center;
    align-items: center;
@@ -609,7 +609,7 @@ html {
   }
 
   .opciones-navegacion-visible{
-  left: 0%;
+  left: 100%;
   width: 100%;
   text-align:center;
   align-items: center;
@@ -617,7 +617,7 @@ html {
   }
 
   .opciones-navegacion-visible a {
-  text-align: left;
+  text-align: center;
   }
 }
 
